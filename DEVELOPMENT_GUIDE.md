@@ -44,7 +44,33 @@ git push origin main
 
 ---
 
-## 🏁 **Proceso de Release (Nuevas Versiones)**
+## 🚀 **Proceso de Release (Nuevas Versiones)**
+
+### **🎯 NUEVO: Release Súper Automático**
+
+#### **⚡ La forma MÁS RÁPIDA (1 comando):**
+```powershell
+# Auto-detecta TODO y hace el release completo
+.\auto-release.ps1 -AutoConfirm
+```
+
+#### **🤖 Modo Inteligente con Confirmación:**
+```powershell
+# Analiza cambios, sugiere versión y pide confirmación
+.\auto-release.ps1
+```
+
+#### **💨 Quick Release por Tipo:**
+```powershell
+.\quick-release.ps1        # Auto-detecta el tipo
+.\quick-release.ps1 patch  # Para bug fixes
+.\quick-release.ps1 minor  # Para nuevas features
+.\quick-release.ps1 major  # Para cambios breaking
+```
+
+---
+
+### **🔧 Método Manual (Paso a Paso)**
 
 ### **Paso 1: Preparar el Release**
 
@@ -72,18 +98,43 @@ git push origin main
 
 ### **Paso 2: Ejecutar Script de Release**
 
+#### **🤖 OPCIÓN 1: Auto-Release Inteligente (RECOMENDADO)**
 ```powershell
-# Desde la raíz del proyecto (donde está package.json)
-cd "c:\Users\profesor\Documents\Proyectos\calculadora"
+# Script que analiza automáticamente los cambios y sugiere la versión
+.\auto-release.ps1
 
-# Ejecutar script automatizado
-.\release.ps1 -Version "1.0.2" -Message "Descripción breve del release"
+# Con confirmación automática (sin preguntas)
+.\auto-release.ps1 -AutoConfirm
 
-# Ejemplo real:
-.\release.ps1 -Version "1.0.2" -Message "Mejoras en algoritmo de cálculo y corrección de bugs"
+# Con mensaje personalizado
+.\auto-release.ps1 -CustomMessage "Descripción específica del release"
 ```
 
-**El script automáticamente:**
+#### **⚡ OPCIÓN 2: Quick Release (Ultra-rápido)**
+```powershell
+# Auto-detecta el tipo de release
+.\quick-release.ps1
+
+# Forzar tipo específico
+.\quick-release.ps1 patch   # Para bug fixes
+.\quick-release.ps1 minor   # Para nuevas features  
+.\quick-release.ps1 major   # Para cambios breaking
+```
+
+#### **🔧 OPCIÓN 3: Release Manual (Control total)**
+```powershell
+# Método tradicional con parámetros manuales
+.\release.ps1 -Version "1.0.2" -Message "Descripción breve del release"
+```
+
+**🧠 El Auto-Release analiza automáticamente:**
+- 💥 **Cambios Breaking**: `BREAKING`, `major:`, `!:`
+- ✨ **Nuevas Features**: `feat:`, `add:`, `new:`, `minor:`
+- 🐛 **Bug Fixes**: `fix:`, `bug:`, `patch:`, `hotfix:`
+- 📚 **Documentación**: `docs:`, `readme:`
+- ⚙️ **Infraestructura**: `chore:`, `build:`, `ci:`
+
+**Todos los scripts automáticamente:**
 - ✅ Actualiza la versión en `package.json`
 - ✅ Actualiza la versión en `calculadora.js`  
 - ✅ Actualiza la versión en `calculadora.html`
@@ -91,6 +142,7 @@ cd "c:\Users\profesor\Documents\Proyectos\calculadora"
 - ✅ Hace commit de todos los cambios
 - ✅ Crea el tag de versión
 - ✅ Sube todo a GitHub
+- ✅ Abre automáticamente la página de GitHub releases
 
 ### **Paso 3: Crear Release en GitHub** 
 
