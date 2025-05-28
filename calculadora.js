@@ -1,5 +1,5 @@
 /**
- * Calculadora de Estrategias SimRacing v1.0.1
+ * Calculadora de Estrategias SimRacing v1.1.0
  * Parte del ecosistema Friends Party Server SimRacing
  * https://friendspartyserver.duckdns.org
  * 
@@ -306,3 +306,4 @@ document.getElementById('numCompuestos').addEventListener('input', function() {
     guardarButton.addEventListener('click', guardarCompuestos);
     container.appendChild(guardarButton);
 });
+

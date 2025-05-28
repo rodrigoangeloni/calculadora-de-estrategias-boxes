@@ -1,4 +1,4 @@
-# 🏁 Calculadora de Estrategias SimRacing v1.0.1
+# 🏁 Calculadora de Estrategias SimRacing v1.1.0
 
 **Parte oficial del ecosistema [Friends Party Server SimRacing](https://friendspartyserver.duckdns.org) 🎮**
 
@@ -311,3 +311,4 @@ Tu contribución nos ayuda a mantener los servidores activos y desarrollar nueva
 ---
 
 **🌟 ¿Listo para dominar la pista? ¡Únete a [Friends Party Server](https://friendspartyserver.duckdns.org) y lleva tu SimRacing al siguiente nivel!**
+
