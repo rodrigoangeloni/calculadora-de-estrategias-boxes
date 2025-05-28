@@ -5,6 +5,40 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-05-28
+
+### ✨ Agregado
+- **Sistema completo de auto-release inteligente** con detección automática de tipo de cambio
+- Script `auto-release.ps1` para análisis inteligente de cambios y sugerencia de versión
+- Script `quick-release.ps1` para releases rápidos con incremento automático
+- Documentación especializada en `RELEASE_SCRIPTS_README.md`
+- Detección automática de tipo de release basada en archivos modificados:
+  - **PATCH**: Solo correcciones de bugs y documentación
+  - **MINOR**: Nuevas funcionalidades y mejoras
+  - **MAJOR**: Cambios en la estructura del proyecto
+- Validación completa de formato Semantic Versioning
+- Interfaz colorizada con emojis para mejor experiencia de usuario
+- Sistema de confirmación interactivo antes de crear releases
+
+### 🚀 Mejorado
+- **Workflow de desarrollo completamente automatizado**
+- Proceso de releases unificado con un solo comando
+- Mejor detección de errores en el proceso de release
+- Scripts más robustos con validación exhaustiva
+- Documentación técnica mejorada para desarrolladores
+
+### 📚 Documentación
+- Guía completa de uso de scripts automatizados
+- Actualización de `DEVELOPMENT_GUIDE.md` con workflows modernos
+- Ejemplos prácticos para todos los tipos de releases
+- Mejores prácticas para versionado automático y gestión de releases
+
+### 🔧 Técnico
+- Integración completa con Git para automatización de tags y pushes
+- Sistema de backup automático antes de realizar cambios
+- Validación de conectividad con repositorio remoto
+- Manejo inteligente de conflictos de versiones existentes
+
 ## [1.0.1] - 2024-12-27
 
 ### 🔧 Corregido
