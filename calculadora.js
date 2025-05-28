@@ -1,3 +1,13 @@
+/**
+ * Calculadora de Estrategias SimRacing v1.0.1
+ * Parte del ecosistema Friends Party Server SimRacing
+ * https://friendspartyserver.duckdns.org
+ * 
+ * @version 1.0.1
+ * @author Rodrigo Angeloni
+ * @license MIT
+ */
+
 // Duración de los compuestos de neumáticos (en vueltas)
 let duracionNeumaticos = {};
 

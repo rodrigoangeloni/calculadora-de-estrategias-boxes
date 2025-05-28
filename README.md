@@ -1,8 +1,13 @@
-# 🏁 Calculadora de Estrategias F1/SimRacing
+# 🏁 Calculadora de Estrategias SimRacing v1.0.1
 
 **Parte oficial del ecosistema [Friends Party Server SimRacing](https://friendspartyserver.duckdns.org) 🎮**
 
-Una herramienta web interactiva diseñada específicamente para la comunidad sudamericana de SimRacing, que te permite calcular estrategias óptimas de combustible y neumáticos para carreras de Fórmula 1 y simuladores como Assetto Corsa.
+[![Versión](https://img.shields.io/badge/versión-1.0.1-brightgreen.svg)](https://github.com/friendspartyserver/calculadora-estrategias)
+[![Estado](https://img.shields.io/badge/estado-estable-success.svg)]()
+[![Licencia](https://img.shields.io/badge/licencia-MIT-blue.svg)]()
+[![Plataforma](https://img.shields.io/badge/plataforma-web-orange.svg)]()
+
+Una herramienta web interactiva diseñada específicamente para la comunidad sudamericana de SimRacing, que te permite calcular estrategias óptimas de combustible y neumáticos para carreras de simuladores como Assetto Corsa.
 
 > 🌟 **¡Forma parte de la mayor comunidad de SimRacing en Sudamérica!** Únete a nuestros servidores de Assetto Corsa y lleva tus carreras al siguiente nivel con estrategias profesionales.
 
@@ -18,7 +23,7 @@ Una herramienta web interactiva diseñada específicamente para la comunidad sud
 
 ### 🔧 Stack Tecnológico
 - 🌐 **HTML5**: Estructura semántica optimizada para velocidad
-- 🎨 **Tailwind CSS**: Diseño profesional que refleja la estética de la F1
+- 🎨 **Tailwind CSS**: Diseño profesional que refleja la estética del SimRacing
 - ⚙️ **JavaScript ES6+**: Algoritmos de cálculo precisos y interactividad fluida
 - 💿 **LocalStorage**: Persistencia local sin necesidad de conexión
 
@@ -36,7 +41,7 @@ Una herramienta web interactiva diseñada específicamente para la comunidad sud
 ```
 📊 Número de compuestos disponibles (1-4)
 🔴 Tipo de cada compuesto (SS, S, M, H)
-📈 Duración de cada compuesto (vueltas)
+📈 Duración de cada compuesto (ej: SS=5, S=10, M=15, H=20 vueltas)
 🚦 Compuesto inicial para salir de parrilla
 ```
 
@@ -84,7 +89,7 @@ Tu ingeniero virtual te proporciona:
 ⏱️ Duración: 30 minutos
 🔄 Tiempo por vuelta: 1.5 minutos (Monaco GP)
 ⛽ Consumo por vuelta: 2.5 litros
-🛞 Compuestos: SS (8 vueltas), S (12 vueltas), M (18 vueltas)
+🛞 Compuestos: SS (5 vueltas), S (10 vueltas), M (15 vueltas)
 ```
 **🎯 Resultado**: Estrategia sin paradas - Compuesto Medium para máxima consistencia
 
@@ -93,18 +98,18 @@ Tu ingeniero virtual te proporciona:
 ⏱️ Duración: 90 minutos  
 🔄 Tiempo por vuelta: 1.8 minutos (Silverstone)
 ⛽ Consumo por vuelta: 3.2 litros
-🛞 Compuestos: SS (10 vueltas), S (15 vueltas), M (25 vueltas), H (35 vueltas)
+🛞 Compuestos: SS (5 vueltas), S (10 vueltas), M (15 vueltas), H (20 vueltas)
 ```
 **🎯 Resultado**: Estrategia de 2 paradas optimizadas - SS → M → H
 
-### 🏎️ Ejemplo 3: Carrera F1 Clásica (67 vueltas)
+### 🏎️ Ejemplo 3: Carrera SimRacing Clásica (67 vueltas)
 ```
 🏁 Circuito: Monza (Assetto Corsa)
 🔄 Tiempo por vuelta: 1:21.500
 ⛽ Consumo por vuelta: 2.8 litros
-🛞 Compuestos F1: Soft (12 vueltas), Medium (20 vueltas), Hard (30 vueltas)
+🛞 Compuestos disponibles: Soft (10 vueltas), Medium (15 vueltas), Hard (20 vueltas)
 ```
-**🎯 Resultado**: Estrategia de 1 parada - Soft → Hard en vuelta 25
+**🎯 Resultado**: Estrategia de 3 paradas - Soft → Medium → Hard → Medium
 
 ## ⚙️ Motor de Cálculo y Algoritmos
 
@@ -142,9 +147,9 @@ Tu ingeniero virtual te proporciona:
 - 🏆 Estrategias probadas en carreras endurance
 - 🌟 **Optimizado para servidores Friends Party Server**
 
-### 🏎️ F1 Games (EA Sports / Codemasters)
+### 🏎️ Juegos de Simulación (EA Sports / Codemasters)
 - 🎯 Configuraciones de carrera personalizada
-- 🔴🟡⚫ Compuestos oficiales de neumáticos F1
+- 🔴🟡⚫ Compuestos oficiales de neumáticos
 - 🏆 Estrategias de Gran Premio y Sprint Race
 - 📈 Compatible con modos Carrera y Mi Equipo
 
@@ -283,15 +288,23 @@ calculadora/
 
 Tu contribución nos ayuda a mantener los servidores activos y desarrollar nuevas herramientas para la comunidad de SimRacing sudamericana.
 
+## 👨‍💻 Autor
+
+**Rodrigo Angeloni** - *Desarrollador y entusiasta del SimRacing*
+
+- 🏁 Creador de la Calculadora de Estrategias SimRacing
+- 🎮 Miembro activo de Friends Party Server SimRacing
+- 🌎 Apasionado por la comunidad de SimRacing sudamericana
+
 ## 📄 Licencia y Derechos
 
-© 2025 **Friends Party Server SimRacing**. Todos los derechos reservados.
+© 2025 **Rodrigo Angeloni**. Todos los derechos reservados.
 
 ---
 
 ### 🏁 ¡A por la victoria con estrategias profesionales!
 
-🎮 *Desarrollado con pasión por la comunidad de SimRacing sudamericana*
+🎮 *Desarrollado por **Rodrigo Angeloni** para la comunidad de SimRacing sudamericana*
 
 🏆 *"En la pista, cada segundo cuenta. En los boxes, cada estrategia puede ser la diferencia entre el podio y el olvido."*
 

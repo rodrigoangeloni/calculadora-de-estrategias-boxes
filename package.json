@@ -1,0 +1,39 @@
+{  "name": "calculadora-estrategias-simracing",
+  "version": "1.0.1",
+  "description": "Calculadora web interactiva para estrategias de combustible y neumáticos en SimRacing - Friends Party Server",
+  "main": "calculadora.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "lint": "echo 'No linting configured yet'",
+    "test": "echo 'No tests configured yet'"
+  },  "keywords": [
+    "simracing",
+    "estrategia",
+    "combustible",
+    "neumaticos",
+    "calculadora",
+    "assetto-corsa",
+    "friends-party-server"
+  ],  "author": "Rodrigo Angeloni",
+  "license": "MIT",
+  "homepage": "https://friendspartyserver.duckdns.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/friendspartyserver/calculadora-estrategias.git"
+  },
+  "bugs": {
+    "url": "https://github.com/friendspartyserver/calculadora-estrategias/issues"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
