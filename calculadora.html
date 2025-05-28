@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="Friends Party Server SimRacing: Servidores de Assetto Corsa en Sudamérica.">
+    <meta name="keywords" content="Assetto Corsa, SimRacing, Friends Party Server, servidores, carreras, Sudamérica, Latino, Argentina, Paraguay.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://friendspartyserver.duckdns.org/about.html">
+    <meta property="og:title" content="Friends Party Server SimRacing">
+    <meta property="og:description" content="Friends Party Server SimRacing: Servidores de Assetto Corsa en Sudamérica.">
+    <meta property="og:image" content="https://i.ibb.co/nNnx250S/00-logo-fps-transparent1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://friendspartyserver.duckdns.org/about.html">
+    <meta property="twitter:title" content="Friends Party Server SimRacing">
+    <meta property="twitter:description" content="Friends Party Server SimRacing: Servidores de Assetto Corsa en Sudamérica.">
+    <meta property="twitter:image" content="https://i.ibb.co/nNnx250S/00-logo-fps-transparent1.png">
+
+    <title>FriendsPartyServer SimRacing</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Precarga de recursos -->
+    <link rel="preload" href="https://i.ibb.co/nNnx250S/00-logo-fps-transparent1.png" as="image">
+    <link rel="preload" href="styles.css" as="style">
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <!-- Cabecera superior -->
+    <header class="bg-gray-800 py-6 mb-8">
+        <div class="container mx-auto text-center">
+            <!-- Logo -->
+            <img src="/assets/images/Logo-FriendsPartyServerSR.webp" alt="Logo de Friends Party Server SimRacing" class="mx-auto w-32 mb-4">
+            <h1 class="text-4xl font-bold">Friends Party Server "SimRacing"</h1>
+            <p class="mt-2 text-gray-400">Servidores de Assetto Corsa en Sudamérica.</p>
+        </div>
+    </header>
+
+    <!-- Enlaces de navegación -->
+    <nav class="bg-gray-800 py-4 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+            <a href="index.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">INICIO</a>
+            <a href="reglamento.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">NORMAS BASICAS </a>
+            <a href="servers.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">SERVIDORES</a>
+            <a href="eventos.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">EVENTOS</a>
+            <a href="calculadora.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">CALCULADORA</a>
+            <a href="redes.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">REDES</a>
+            <a href="about.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">ACERCA DE</a>
+            <a href="contact.html" class="text-gray-100 hover:text-yellow-400 transition duration-300 ease-in-out py-2 px-4 rounded-md hover:bg-gray-600">CONTACTO</a>
+        </div>
+    </nav>
+    
+
+    <section class="py-12">
+    <div class="max-w-2xl mx-auto p-6 bg-gray-800 rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold mb-6 text-center text-white">Calculadora de Combustible y Neumáticos</h2>
+        
+        <!--Mensaje informativo-->
+        <div class="bg-blue-900/20 p-4 rounded-lg mb-6">
+            <p class="text-sm text-gray-300">
+                <strong>Nota:</strong> Para obtener los mejores resultados, ingresa datos reales de tu simulador. Cuanto más vueltas realices con diferentes condiciones (combustible y neumáticos), mejor será la precisión de la estrategia.
+            </p>
+        </div>
+
+        <p class="text-lg text-gray-300 mb-6 text-center">Ingresa los datos de tu carrera para planificar tu estrategia:</p>
+    
+            <form id="calculadoraForm" class="space-y-6">
+                <div>
+                    <label for="duracionCarrera" class="block mb-2 font-medium text-gray-200">Duración de la carrera (minutos):</label>
+                    <input type="number" class="w-full p-2 border border-gray-600 rounded-md bg-gray-900 text-gray-200" id="duracionCarrera" required>
+                </div>
+    
+                <div>
+                    <label for="tiempoVuelta" class="block mb-2 font-medium text-gray-200">Tiempo promedio por vuelta (minutos):</label>
+                    <input type="number" step="0.01" class="w-full p-2 border border-gray-600 rounded-md bg-gray-900 text-gray-200" id="tiempoVuelta" required>
+                </div>
+    
+                <div>
+                    <label for="consumoVuelta" class="block mb-2 font-medium text-gray-200">Consumo de combustible por vuelta (litros):</label>
+                    <input type="number" step="0.1" class="w-full p-2 border border-gray-600 rounded-md bg-gray-900 text-gray-200" id="consumoVuelta" required>
+                </div>
+    
+                <div>
+                    <label for="vueltaExtra" class="block mb-2 font-medium text-gray-200">¿Hay vuelta extra?</label>
+                    <select id="vueltaExtra" class="w-full p-2 border border-gray-600 rounded-md bg-gray-900 text-gray-200">
+                        <option value="0">No</option>
+                        <option value="1">Sí</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="numCompuestos" class="block mb-2 font-medium text-gray-200">¿Cuántos compuestos de neumáticos tiene el coche?</label>
+                    <input type="number" class="w-full p-2 border border-gray-600 rounded-md bg-gray-900 text-gray-200" id="numCompuestos" min="1" required>
+                </div>
+    
+     <div id="compuestosContainer" class="space-y-4">
+                    </div>
+    
+                 <div>
+                    <label for="compuestoInicial" class="block mb-2 font-medium text-gray-200">Compuesto inicial:</label>
+                    <select id="compuestoInicial" class="w-full p-2 border border-gray-600 rounded-md bg-gray-900 text-gray-200" required>
+                    </select>
+                </div>
+    
+                 <div>
+                    <label for="paradasBoxes" class="block mb-2 font-medium text-gray-200">¿Habrá paradas en boxes?</label>
+                    <select id="paradasBoxes" class="w-full p-2 border border-gray-600 rounded-md bg-gray-900 text-gray-200">
+                        <option value="0">No</option>
+                        <option value="1">Sí</option>
+                    </select>
+                </div>
+    
+                <div id="paradasContainer" class="space-y-4" style="display: none;">
+                    <label for="numParadas" class="block mb-2 font-medium text-gray-200">Número de paradas:</label>
+                    <input type="number" class="w-full p-2 border border-gray-600 rounded-md bg-gray-900 text-gray-200" id="numParadas" min="0">
+                    <div id="detallesParadas" class="space-y-4"></div>
+                </div>
+    
+                <div class="flex space-x-4">
+                    <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="calcular()">Calcular</button>
+                    <button type="button" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" onclick="limpiarFormulario()">Limpiar</button>
+                </div>
+            </form>
+    
+            <div id="resultados" class="mt-6 p-4 bg-gray-800 rounded-md" style="display: none;">
+                <h3 class="text-2xl font-bold mb-4 text-white">Resultados</h3>
+                <p class="text-gray-300"><strong>Total de vueltas:</strong> <span id="totalVueltas"></span></p>
+                <p class="text-gray-300"><strong>Combustible total necesario:</strong> <span id="combustibleTotal"></span> litros</p>
+                <p class="text-gray-300"><strong>Neumáticos iniciales:</strong> <span id="neumaticosIniciales"></span></p>
+                <p class="text-gray-300"><strong>Detalles de paradas:</strong> <span id="detallesParadasResultado"></span></p>
+                <p class="text-gray-300"><strong>Estrategia sugerida:</strong> <span id="estrategiaSugerida"></span></p>
+            </div>
+        </div>
+    </section>
+    <!-- Botón de apoyo en la parte inferior derecha -->
+    <a href="https://www.buymeacoffee.com/friendspartyserver" class="fixed bottom-4 right-4 z-10">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Apoya%20al%20Server%20%3B%29&emoji=%F0%9F%8D%BA&slug=friendspartyserver&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" alt="Apoya al Server" />
+    </a>
+
+    <!-- Pie de Página -->
+    <footer class="bg-blue-800 text-white py-4 text-center">
+        <p>&copy; 2025 Friends Party SimRacing. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
